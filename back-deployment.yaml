@@ -28,19 +28,6 @@ spec:
           name: http
       restartPolicy: Always
 
----
-
-apiVersion: v1
-kind: Service
-metadata:
-  name: api
-spec:
-  selector:
-    app: api
-  ports:
-  - name: http
-    port: 3000
-    targetPort: 3000
 
 ---
 apiVersion: v1
